@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">GEL2202</string>
+    <string name="start">START</string>
+    <string name="science_live">ความหมายของชีวิตตามวิทยาศาสตร์</string>
+    <string name="buddha_live">ความหมายของชีวิตตามพระพุทธศาสนา</string>
+    <string name="second_text_1">มนุษย์เกิดจากการผสมพันธุ์ของเซลล์</string>
+    <string name="second_text_3">ทุกศาสนาล้วนสอนให้มนุษย์ทำแต่ความดี</string>
+    <string name="cancel">CANCEL</string>
+    <string name="ok">ok</string>
+</resources>
