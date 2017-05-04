@@ -102,7 +102,6 @@ public class SecondFragment extends Fragment implements View.OnClickListener , W
     @Override
     public void onResume() {
         super.onResume();
-//        Toast.makeText(getActivity(),"onResume",Toast.LENGTH_SHORT).show();
     }
 
     @Override
