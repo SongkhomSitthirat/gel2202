@@ -34,12 +34,15 @@ import com.sitthirat.gel2202.tool.Contextor;
 @SuppressWarnings("unused")
 public class SecondFragment extends Fragment implements View.OnClickListener , WebFragment.WebFragmentListener {
 
+    static View rootView;
+
     ImageView ivSecond1, ivSecond2, ivSecond3, ivSecond4, ivSecond5;
 
     WebFragment dialogFragment;
 
     @Override
     public void onButtonClickListener(String url) {
+        ivSecond1 = (ImageView)rootView.findViewById(R.id.iv_second_1);
         Glide.with(Contextor.getInstance().getContext()).load(url).into(ivSecond1);
         Toast.makeText(Contextor.getInstance().getContext(),url,Toast.LENGTH_SHORT).show();
     }
@@ -68,7 +71,7 @@ public class SecondFragment extends Fragment implements View.OnClickListener , W
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_second, container, false);
+        rootView = inflater.inflate(R.layout.fragment_second, container, false);
         initInstances(rootView, savedInstanceState);
         return rootView;
     }
